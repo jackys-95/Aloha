@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LookUpPatient"
+            android:label="@string/title_activity_look_up_patient"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreateNewRecord"
+            android:label="@string/title_activity_create_new_record"
+            android:parentActivityName=".ConfirmPatient" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.ConfirmPatient" />
+        </activity>
+        <activity
+            android:name=".ConfirmPatient"
+            android:label="@string/title_activity_confirm_patient"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PreviousRecord"
+            android:label="@string/title_activity_previous_record"
+            android:parentActivityName=".LookUpPatient" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.LookUpPatient" />
+        </activity>
+        <activity
+            android:name=".IndividualData"
+            android:label="@string/title_activity_individual_data"
+            android:parentActivityName=".PreviousRecord" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.PreviousRecord" />
+        </activity>
+        <activity
+            android:name=".VisitRecord"
+            android:label="@string/title_activity_visit_record"
+            android:parentActivityName=".PreviousRecord" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.PreviousRecord" />
+        </activity>
+        <activity
+            android:name=".VitalSignsUpdate"
+            android:label="@string/title_activity_vital_signs_update"
+            android:parentActivityName=".VisitRecord" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hospitalsystem.VisitRecord" />
+        </activity>
+    </application>
+
+</manifest>
