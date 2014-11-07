@@ -9,7 +9,7 @@
     tools:context="com.example.hospitalsystem.VisitRecord" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/VisitRecordtextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -19,38 +19,40 @@
         android:text="@string/VisitRecord" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/VisitRecordtextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/VisitRecordtextView1"
         android:layout_centerHorizontal="true"
         android:text="@string/notFunctional"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/VisitRecordtextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_toLeftOf="@+id/textView2"
+        android:layout_alignLeft="@+id/VisitRecordtextView1"
+        android:layout_below="@+id/VisitRecordtextView2"
+        android:layout_marginLeft="28dp"
         android:text="@string/at" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/VisitRecordtextView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignRight="@+id/textView2"
-        android:text="@string/notFunctional" />
+        android:layout_alignBaseline="@+id/VisitRecordtextView3"
+        android:layout_alignBottom="@+id/VisitRecordtextView3"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/VisitRecordtextView3"
+        android:text="@string/notFunctionaltime" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/VisitRecordbutton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="43dp"
-        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
         android:text="@string/Update" />
 
 </RelativeLayout>

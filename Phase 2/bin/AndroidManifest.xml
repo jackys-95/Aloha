@@ -49,18 +49,18 @@
         <activity
             android:name=".PreviousRecord"
             android:label="@string/title_activity_previous_record"
-            android:parentActivityName=".LookUpPatient" >
+            android:parentActivityName=".IndividualData" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.hospitalsystem.LookUpPatient" />
+                android:value="com.example.hospitalsystem.IndividualData" />
         </activity>
         <activity
             android:name=".IndividualData"
             android:label="@string/title_activity_individual_data"
-            android:parentActivityName=".PreviousRecord" >
+            android:parentActivityName=".LookUpPatient" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.hospitalsystem.PreviousRecord" />
+                android:value="com.example.hospitalsystem.LookUpPatient" />
         </activity>
         <activity
             android:name=".VisitRecord"
@@ -73,10 +73,10 @@
         <activity
             android:name=".VitalSignsUpdate"
             android:label="@string/title_activity_vital_signs_update"
-            android:parentActivityName=".VisitRecord" >
+            android:parentActivityName=".IndividualData" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.hospitalsystem.VisitRecord" />
+                android:value="com.example.hospitalsystem.IndividualData" />
         </activity>
     </application>
 

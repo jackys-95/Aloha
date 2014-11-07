@@ -1,12 +1,16 @@
 package com.example.hospitalsystem;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
-public class LookUpPatient extends Activity {
+public class LookUpPatient extends Activity{
 
+	public final static String HealthCardNumber = "com.example.hospitalsystem.cardNum";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,5 +34,14 @@ public class LookUpPatient extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+
+	public void sendMessage(View v){
+		Intent intent = new Intent (this, IndividualData.class);
+		EditText editText = (EditText)findViewById(R.id.editText1);
+		String cardNumber = editText.getText().toString();
+		intent.putExtra(HealthCardNumber, cardNumber);
+		startActivity(intent);
 	}
 }

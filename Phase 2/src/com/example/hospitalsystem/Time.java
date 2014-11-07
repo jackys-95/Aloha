@@ -7,7 +7,7 @@ public class Time implements Comparable<Object>{
 	private int day;
 	private int hour;
 	private int minute;
-	
+
 	/**
 	 * Constructs a Time object 
 	 * @param year
@@ -23,7 +23,14 @@ public class Time implements Comparable<Object>{
 		this.hour = hour;
 		this.minute = minute;
 	}
-
+	
+	public Time(int year, int month, int day){
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		this.hour = -1;
+		this.minute = -1;
+	}
 
 	/**
 	 * @return 1 if this time is later than the other time,
@@ -32,35 +39,35 @@ public class Time implements Comparable<Object>{
 	 */
 	@Override
 	public int compareTo(Object time) {
-		
+
 		int i = compare(((Time)time).year, this.year);
 		if (i != 0){
 			return i;
 		}
-		
+
 		i = compare(((Time)time).month, this.month);
 		if (i != 0){
 			return i;
 		}
-		
+
 		i = compare(((Time)time).day, this.day);
 		if (i != 0){
 			return i;
 		}
-		
+
 		i = compare(((Time)time).hour, this.hour);
 		if (i != 0){
 			return i;
 		}
-		
+
 		i = compare(((Time)time).minute, this.minute);
 		if (i != 0){
 			return i;
 		}
-		
+
 		return 0;
 	}
-	
+
 	private int compare(int a, int b){
 		if (a > b){
 			return -1;
@@ -72,12 +79,12 @@ public class Time implements Comparable<Object>{
 			return 0;
 		}
 	}
-	
+
 	/**
 	 * @return the String representation of this date, in YYYY/MM/DD hh:mm format.
 	 */
 	public String toString() {
-		
+
 		//Formatting of month so that we get 2014/09/09 05:07 instead of 2014/9/9 5:7
 		String monthString = Integer.toString(this.month);
 		if(this.month < 10){
@@ -85,20 +92,25 @@ public class Time implements Comparable<Object>{
 		}
 		String dayString = Integer.toString(this.day);
 		if(this.month < 10){
-			dayString = "0" + monthString;
+			dayString = "0" + dayString;
 		}
 		String hourString = Integer.toString(this.hour);
 		if(this.month < 10){
-			hourString = "0" + monthString;
+			hourString = "0" + hourString;
 		}
 		String minuteString = Integer.toString(this.minute);
 		if(this.month < 10){
-			minuteString = "0" + monthString;
-		}	
-		return Integer.toString(this.year) + "/" + monthString + "/" + dayString + " "
-				+ hourString + ":" + minuteString;
+			minuteString = "0" + minuteString;
+		}
+		if(hour != -1) {
+			return Integer.toString(this.year) + "/" + monthString + "/" + dayString + " "
+					+ hourString + ":" + minuteString;
+		}
+		else {
+			return Integer.toString(this.year) + "/" + monthString + "/" + dayString;
+		}
 	}
-	
+
 	public String dateString() {
 		String monthString = Integer.toString(this.month);
 		if(this.month < 10){
@@ -106,9 +118,9 @@ public class Time implements Comparable<Object>{
 		}
 		String dayString = Integer.toString(this.day);
 		if(this.month < 10){
-			dayString = "0" + monthString;
+			dayString = "0" + dayString;
 		}
 		return Integer.toString(this.year) + "/" + monthString + "/" + dayString;
 	}
 }
- /*appdsa*/
+/*appdsa*/

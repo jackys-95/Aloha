@@ -9,20 +9,37 @@
     tools:context="com.example.hospitalsystem.PreviousRecord" >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/PreviousRecordtextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/PreviousRecordtextView1"
         android:layout_centerHorizontal="true"
         android:text="@string/notFunctional"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/PreviousRecordtextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="@string/PreviousRecord" />
+
+    <TextView
+        android:id="@+id/PreviousRecordtextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PreviousRecordtextView1"
+        android:layout_below="@+id/PreviousRecordtextView2"
+        android:text="@string/at" />
+
+    <TextView
+        android:id="@+id/PreviousRecordtextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PreviousRecordtextView3"
+        android:layout_alignBottom="@+id/PreviousRecordtextView3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/notFunctionaltime" />
 
 </RelativeLayout>

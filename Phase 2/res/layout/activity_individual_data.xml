@@ -9,7 +9,7 @@
     tools:context="com.example.hospitalsystem.IndividualData" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/individualTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -19,41 +19,58 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/individualTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/individualTextView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:text="@string/notFunctional"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/individualTextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/individualTextView4"
+        android:layout_below="@+id/individualTextView2"
         android:layout_marginTop="43dp"
         android:text="@string/NameColon"
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/individualTextView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_toLeftOf="@+id/textView2"
+        android:layout_below="@+id/individualTextView3"
         android:text="@string/DOBColon"
         android:textSize="15sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/individualTextView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/individualTextView4"
+        android:layout_below="@+id/individualTextView4"
         android:text="@string/HCNColon"
         android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/ViewPrevRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individualTextView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/ViewPreviousRecords" />
+
+    <Button
+        android:id="@+id/UpdateRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewPrevRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/UpdateRecord" />
 
 </RelativeLayout>

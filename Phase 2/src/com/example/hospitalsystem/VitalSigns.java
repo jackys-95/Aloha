@@ -7,7 +7,8 @@ public class VitalSigns extends Data {
 	private int heartRate;
 	
 	
-	public VitalSigns(int temp, int systolic, int diastolic, int heartRate){
+	public VitalSigns(int temp, int systolic, int diastolic, int heartRate, Time timeRecorded){
+		this.timeRecorded = timeRecorded;
 		this.temp = temp;
 		this.heartRate = heartRate;
 		this.systolic = systolic;

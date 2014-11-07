@@ -1,16 +1,35 @@
 package com.example.hospitalsystem;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class IndividualData extends Activity {
+public class IndividualData extends Activity implements OnClickListener {
 
+	Button update;
+	Button viewPrevRecord;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_individual_data);
+		update = (Button) findViewById(R.id.UpdateRecord);
+		update.setOnClickListener(new OnClickListener(){
+			public void onClick(View v) {
+				clickUpdate();
+			}
+		});
+		viewPrevRecord = (Button) findViewById(R.id.ViewPrevRecord);
+		viewPrevRecord.setOnClickListener(new OnClickListener(){
+			public void onClick(View v) {
+				clickPrevRecord();
+			}
+		});
 	}
 
 	@Override
@@ -31,4 +50,21 @@ public class IndividualData extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void clickUpdate() {
+		Intent updateIntent = new Intent(this, VitalSignsUpdate.class);
+		startActivity(updateIntent);
+	}
+	
+	public void clickPrevRecord(){
+		Intent updateIntent = new Intent(this, PreviousRecord.class);
+		startActivity(updateIntent);
+	}
+	
 }

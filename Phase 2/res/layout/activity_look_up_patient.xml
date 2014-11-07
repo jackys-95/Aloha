@@ -9,7 +9,7 @@
     tools:context="com.example.hospitalsystem.ConfirmPatient" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/LookUpTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -20,13 +20,12 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/LookUpEditText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="51dp"
+        android:layout_alignLeft="@+id/LookUpTextView1"
+        android:layout_below="@+id/LookUpTextView1"
+        android:layout_marginTop="39dp"
         android:ems="10"
         android:inputType="number" >
 
@@ -34,11 +33,14 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/lookUp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignRight="@+id/textView1"
-        android:text="@string/Confirm" />
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/LookUpEditText1"
+        android:layout_alignBottom="@+id/LookUpEditText1"
+        android:layout_alignRight="@+id/LookUpTextView1"
+        android:onClick="sendMessage"
+        android:text="@string/Confirm"
+        android:textSize="13sp" />
 
 </RelativeLayout>
