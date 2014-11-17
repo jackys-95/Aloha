@@ -1,0 +1,93 @@
+Meeting date: October 29, 2014
+
+Summary:
+Finished merging CRC Design
+
+To do:
+Finish crc_phase2.pdf (Allen)
+Finsh design_phase2.txt (Alex)
+Review and if necessary revise crc_phase2.pdf and design_phase2.txt
+Figure out next steps for meeting (Oct. 31)
+
+-Added keeping track of time for each medical data and each data as responsibility of patient
+-patient has 3 arraylists: symptoms, vital signs, medical history
+-medical history: not needed
+
+nurse - eliminated redundant responsibilities
+
+data - add self to patient as responsibility
+data - keep track of time as responsibility
+data - record data and save to patient
+
+merged time and date into single object
+
+urgency - modified just to contain most recent urgency data point
+
+time - made with 2 responsibilities: create time, compare time
+
+added patient_system
+-save data
+-access patients
+-create list sorted by time
+-sort by urgency (Decreasing)
+-access records to look up by health card no.
+-collaborators just patient
+
+Meeting date: October 31, 2014
+
+Current progress:
+-design_phase2.txt completed
+-crc_phase2.pdf not yet complete
+-app (Phase II) not yet started
+
+
+Completed during meeting:
+-Created, commited folder group/app/Phase2; new android project in this directory
+-Created, committed crc_phase2.pdf
+-started Time (must complete)
+
+Goals:
+-Figure out Android programming details, how to use eclipse-android
+	--specifically views, execute code on view
+	--Experiment with eclipse-android, emulator (or use device?)
+-Figure out java.io readers and writers
+-Implement back end (listed features)
+	--create patient and collaborators by MONDAY NOV 3
+
+
+Notes:
+-Build bottom up; implement independent classes first
+-Allocation of work? classes dependent
+
+Meeting date: November 3, 2014 (Planning Meeting)
+
+Current Progress:
+-Finished the UI Design for the program
+-Completed most part of the backend
+	--patient_system needs to be implemented
+-Urgency does not need to be implemented in PhaseII
+
+Completed during meeting:
+-Went through what the group has accomplished
+-Updated the group members with current status
+
+Goals:
+-Jacky: Finish the patient system class
+-Zoe and Jacky: Connect the back-end to the front end
+-Yuze and Alex: Give buttons functionality so that they can switch between activities
+-Next meeting on November 5
+
+Due to time constraints, we could not meet up on November 5th 
+
+Status Meeting of November 8th 
+Current Progress: 
+-Finished the Patient System class
+-Finished the connection between back-end and front end
+
+Completed during meeting:
+-Some error checking
+
+-Goals:
+-Jacky: Complete the Javadocs for the backend
+-Zoe and Yuze: Complete the README file and do more error checking
+-Alex: Complete Javadocs for the frontend

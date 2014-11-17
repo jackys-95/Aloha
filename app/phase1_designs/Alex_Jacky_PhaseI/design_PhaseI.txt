@@ -1,0 +1,51 @@
+For each class we will be using the following data structures to store their attributes:
+
+Patient:
+	-int: Age
+	-String: Name, Health Card Number (Health Card Number is a String because there can be letters)
+	-Date object: Birth Date
+	-Time object: Arrival Time
+	-ArrayList of Health Record Objects
+		--We chose to store it in a class that implements from List, but we had to choose which exact class.
+		--We chose ArrayList because it has the properties of being resizable and being orderable which is necessary for the following reasons: 
+			---We will be adding an update to a patient's health record, so this list must be resizable. 
+	        ---We want this list to be ordered so that we can order the list by the date which is necessary to organize health records. 
+	-TreeMap of Symptom Descriptions with keys that are Time objects and values that are Strings 
+		--The requirement for this attribute is that we want to store each description string with an associated time. 
+			---This implies that we need a class that implements Map, so we chose TreeMap because it is a map that can also be ordered which is necessary because it makes sense to order symptoms by a date. 
+	-ArrayList of Date Objects: Doctor Check-up History 
+		--We chose ArrayList because we needed a resizable data structure as we add more dates. 
+	
+Health Record: 
+	-int: Systolic Blood Pressure, Diastolic Blood Pressure, Heart Rate, Urgency Number
+	-Float: Temperature
+	-Time object: Time Taken 
+	-Boolean: Seen by Doctor
+
+Nurse has no attributes. 
+
+Patient Database System:
+	-ArrayList of Patient Objects 
+		--We chose to store it in a class that implements from List, but we had to choose which exact Class.
+		--We chose ArrayList because it has the properties of being resizable and being orderable which is necessary for the following reasons: 
+			---We require order so that we can sort by Check-In Time or by Urgency Number.
+			---It needs to be resizable because we will be adding new patients as they check in. 
+	
+Date:
+	-int: Month, Day, Year
+	
+Time (Inherits from Date):
+	-Time inherits from Date since Time is a Date with a specified hour and minute.
+	-We distinguish between the two since some Dates, such as Birth Date, it is not important to know the time of birth.
+	-We also distinguish between the two because we need to compare time, but not compare dates. 
+	-Also adds the following two int attributes: Hour, Minute.
+
+To store all of this information, the system will save it in a .txt file with the following format:
+	-First there is a header "Patient:" which is followed by the entry of each patient 
+		--Every patient will have an entry with their Name, Birth Date, and Health Card Number, as well as Arrival Time on separate lines.
+		--After that will be the header "Health Record" which is followed by that Patient's Health Record, which comprises of every check up that the patient has had.
+			---Each check up will have be separated by the header "Check Up" followed by the Health Record class' attributes.
+		--After the Health Record, there will be the header "Symptom Descriptions:" followed by each symptom description of the patient at a given time on a new line. 
+		--After the Symptom Descriptions, there will be the header "Doctor Check-Up History:" followed by each date where the patient has seen a doctor on a new line. 
+
+	-Every patient is separated by a delimiter of two underscores,"__", located after the previous patient's last check-up. 

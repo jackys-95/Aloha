@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hospital System</string>
+    <string name="action_settings">Settings</string>
+    <string name="Welcome">Welcome to</string>
+    <string name="AppName">Triage Helper</string>
+    <string name="title_activity_look_up_patient">LookUpPatient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_new_record">CreateNewRecord</string>
+    <string name="title_activity_confirm_patient">ConfirmPatient</string>
+    <string name="title_activity_previous_record">PreviousRecord</string>
+    <string name="title_activity_individual_data">IndividualData</string>
+    <string name="title_activity_visit_record">VisitRecord</string>
+    <string name="title_activity_vital_signs_update">VitalSignsUpdate</string>
+    <string name="LookUp">look up a existing patient</string>
+    <string name="CreateANewRecord">create a new record</string>
+    <string name="Confirm">confirm</string>
+    <string name="HCNinput">Please input a health card number.</string>
+    <string name="PreviousRecord">Here is the previous record for patient</string>
+    <string name="notFunctional">not functional</string>
+    <string name="IndividualData">Individual Data for patient</string>
+    <string name="NameColon">Name:</string>
+    <string name="DOBColon">Date of Birth:</string>
+    <string name="HCNColon">Health Card Number:</string>
+    <string name="VisitRecord">Visit Record of Patient</string>
+    <string name="at">at</string>
+    <string name="Update">update</string>
+    <string name="VitalSignsUpdate">Vital Signs Update</string>
+    <string name="addTemperature">add temperature</string>
+    <string name="addSystolicPressure">add systolic pressure</string>
+    <string name="addDiastolicPressure">add diastolic pressure</string>
+    <string name="addHeartRate">add heart rate</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
+    <string name="CreateANewVitalSigns">Create a new vital signs record</string>
+    <string name="notFunctionaltime">put current date as default here</string>
+    
+</resources>
