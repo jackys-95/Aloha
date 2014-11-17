@@ -91,3 +91,27 @@ Completed during meeting:
 -Jacky: Complete the Javadocs for the backend
 -Zoe and Yuze: Complete the README file and do more error checking
 -Alex: Complete Javadocs for the frontend
+
+
+Phase 3:
+
+Planning Meeting of November 16th
+ 
+State of the project: 
+Yuze designed a new prototype design of how the activities will link together, keeping in mind the new requirements for Phase 3. We discussed the design of this prototype and came to the conclusion that a few changes had to be made to it. 
+
+1. The "Add Prescription" activity should be linked to from the Visit Record activity
+2. We will display the times that a patient has been seen by a doctor in the scrollable textview in the Waiting List class.
+
+Tasks for Next Meeting:
+
+We split up the feature list from the handout: 
+
+Alex: Do features 1 and 2
+Jacky: Do features 3 and 4
+Zoe: Do features 5 and 6
+Yuze: Unify the back-end features into the front-end, and create activities for them.
+
+Next meeting: 3-4PM, Wednesday November 19
+
+
